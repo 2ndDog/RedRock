@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2894FF"
+            android:hint="添加事项"
+            android:minWidth="400sp"
+            android:textSize="40sp"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:textSize="40sp"
+            android:text="+"
+            android:textColor="#303F9F"
+            />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择优先级"
+            android:textSize="30dp"
+            />
+        </TableRow>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优先一"
+            android:textSize="20dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优先二"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优先三"
+            android:textSize="20dp"/>
+        <RadioButton
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优先四"
+            android:textSize="20dp"/>
+    </RadioGroup>
+</LinearLayout>
